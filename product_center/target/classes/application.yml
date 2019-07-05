@@ -1,0 +1,17 @@
+server:
+  port: 8093
+
+spring:
+  application:
+    name: product_center
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: /src/main/java
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
