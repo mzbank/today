@@ -14,6 +14,7 @@
         <module>zuul_server</module>
         <module>product_center</module>
         <module>user_center</module>
+        <module>order_center</module>
     </modules>
 
     <parent>

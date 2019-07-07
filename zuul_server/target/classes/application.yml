@@ -2,7 +2,7 @@ server:
   port: 8092
 spring:
   application:
-    name: zuul_server
+    name: zuul-server
   devtools:
     restart:
       additional-paths: /src/main/java
@@ -14,8 +14,13 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8090/eureka
+#反向代理及负载均衡配置
 zuul:
   routes:
     baidu:
       path: /api/**
       url: http://www.baidu.com
+    api:
+      path: /api-b/**
+      serviceId: USER-CENTER
+

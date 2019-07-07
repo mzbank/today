@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: tomorrow_server
+    name: tomorrow-server
 
 eureka:
   client:
@@ -11,3 +11,5 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://localhost:8090/eureka/
+
+

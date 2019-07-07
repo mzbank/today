@@ -1,13 +1,9 @@
 server:
-  port: 8093
+  port: 8095
 
 spring:
   application:
-    name: product-center
-  devtools:
-    restart:
-      enabled: true
-      additional-paths: /src/main/java
+    name: user-center
 
 eureka:
   client:
@@ -15,6 +11,3 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8090/eureka/
-feign:
-  hystrix:
-    enabled: true

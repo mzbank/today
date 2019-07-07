@@ -11,15 +11,17 @@ public class RemoteController {
     @Autowired
     private RemoteServiveImpl servive;
 
-    @RequestMapping("/remote")
-    public String getUser(){
-        String name = servive.getName();
-        return name;
-    }
-    
+
+
     @RequestMapping("/gg")
     public String name(){
         return "dfsdf";
+    }
+
+    @RequestMapping("/realize")
+    public String realize(){
+        String realize = servive.realize();
+        return realize;
     }
 
 }

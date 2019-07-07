@@ -10,4 +10,9 @@ public class UserController {
     public String getUser(){
         return "zs";
     }
+
+    @RequestMapping("/dream")
+    public String realize(){
+        return "l have already realize my dream! server port:8094";
+    }
 }

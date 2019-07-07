@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: yesterday_config
+    name: yesterday-config
   devtools:
     restart:
       enabled: true

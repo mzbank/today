@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: product_center
+    name: product-center
   devtools:
     restart:
       enabled: true
@@ -15,3 +15,6 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8090/eureka/
+feign:
+  hystrix:
+    enabled: true

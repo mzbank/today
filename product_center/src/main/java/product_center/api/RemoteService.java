@@ -1,13 +1,12 @@
 package product_center.api;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
+import product_center.api.fallback.RemoteServiceImpl;
 
-@FeignClient(value = "USER_CENTER")
-@Component
+@FeignClient(value = "USER-CENTER",fallbackFactory = RemoteServiceImpl.class)
 public interface RemoteService {
 
-    @RequestMapping("/user")
-    String getUser();
+    @RequestMapping("/dream")
+    String realize();
 }

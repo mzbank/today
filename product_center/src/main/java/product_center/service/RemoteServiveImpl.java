@@ -10,8 +10,8 @@ public class RemoteServiveImpl {
     @Autowired
     private RemoteService service;
 
-    public String getName(){
-        String user = service.getUser();
-        return user;
+    public String realize(){
+        String realize = service.realize();
+        return realize;
     }
 }
