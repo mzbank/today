@@ -8,9 +8,20 @@ spring:
     restart:
       enabled: true
       additional-paths: /src/main/java/
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mzbank/config
+          search-paths: config-client
+          username: mzbank
+          password: at2016year
+      label: master
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8090/eureka/
+
+#configServer配置

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="order_center" />
         <module name="product_center" />
+        <module name="sso_center" />
         <module name="tomorrow" />
         <module name="user_center" />
         <module name="yesterday" />

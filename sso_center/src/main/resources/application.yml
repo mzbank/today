@@ -1,25 +1,16 @@
 server:
-  port: 8093
-
+  port: 8096
 spring:
   application:
-    name: product-center
+    name: sso-center
   devtools:
     restart:
       enabled: true
       additional-paths: /src/main/java
-  cloud:
-    config:
-      uri: http://localhost:8091/
-      profile: application
-      label: master
-
 eureka:
   client:
-    fetch-registry: true
     register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://localhost:8090/eureka/
-feign:
-  hystrix:
-    enabled: true
+

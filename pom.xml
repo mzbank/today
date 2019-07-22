@@ -15,6 +15,7 @@
         <module>product_center</module>
         <module>user_center</module>
         <module>order_center</module>
+        <module>sso_center</module>
     </modules>
 
     <parent>

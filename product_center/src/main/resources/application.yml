@@ -8,6 +8,11 @@ spring:
     restart:
       enabled: true
       additional-paths: /src/main/java
+  cloud:
+    config:
+      uri: http://localhost:8091/
+      profile: application
+      label: master
 
 eureka:
   client:
